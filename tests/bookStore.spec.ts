@@ -12,6 +12,8 @@ test("Book Store", async ({ page }, testInfo) => {
   await page.locator('[id="searchBar"]').fill('Playwright');
   await page.keyboard.press('Enter');
 
+  await page.waitForTimeout(2000);
+
   await takeArchive(page, "Books", testInfo);
 
   await page.locator('[id="searchBar"]').fill('Test Automation');
