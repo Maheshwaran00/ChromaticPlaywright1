@@ -31,7 +31,7 @@ export default defineConfig<ChromaticConfig>({
     trace: 'on',
     video:'on'
   },
-
+  timeout:1000*60,
   /* Configure projects for major browsers */
   projects: [
     {

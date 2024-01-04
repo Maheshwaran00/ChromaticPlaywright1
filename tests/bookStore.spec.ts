@@ -16,6 +16,26 @@ test("Book Store", async ({ page }, testInfo) => {
 
   await page.locator('[id="searchBar"]').fill('Test Automation');
 
+  await page.waitForTimeout(1000);
+
   await takeArchive(page, "Automation Books", testInfo);
 
 });
+
+test("Demoblaze",async({page},testInfo)=>{
+    await page.goto("https://www.demoblaze.com/");
+
+    await expect(page).toHaveTitle('STORE');
+    
+    await takeArchive(page, 'Home Page', testInfo);
+  
+    await page.locator('[class="card-title"]').nth(0).click();
+  
+    await takeArchive(page, "Samsung", testInfo);
+  
+    await page.locator('text="Add to cart"').click();
+  
+    await takeArchive(page, "Alert Box", testInfo);
+
+    page.on('dialog', dialog => dialog.accept());
+})
