@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "archive-storybook": "archive-storybook",
-  "build-archive-storybook": "build-archive-storybook"
+    "build-archive-storybook": "build-archive-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.6"
+    "@types/node": "^20.10.6",
+    "chromatic": "^10.2.0"
   },
   "dependencies": {
     "@chromaui/archive-storybook": "^0.0.18",
