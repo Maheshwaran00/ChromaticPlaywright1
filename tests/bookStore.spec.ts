@@ -35,16 +35,9 @@ test("Demoblaze",async({page},testInfo)=>{
     await page.locator('text="Add to cart"').waitFor({state:"visible"});
   
     await takeArchive(page, "Samsung", testInfo);
+
+    await page.locator('[id="nava"]').click();
+
+    await takeArchive(page, "Navigating Home", testInfo);     
     
-    await page.locator('text="Add to cart"').click();
-
-    await takeArchive(page, "Alert Box", testInfo);
-     
-    page.on('dialog',async dialog =>{
-        await dialog.accept();
-    } );
-
-
-
-
 })
