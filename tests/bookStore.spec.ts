@@ -13,4 +13,9 @@ test("Book Store", async ({ page }, testInfo) => {
   await page.keyboard.press('Enter');
 
   await takeArchive(page, "Books", testInfo);
+
+  await page.locator('[id="searchBar"]').fill('Test Automation');
+
+  await takeArchive(page, "Automation Books", testInfo);
+
 });
