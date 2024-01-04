@@ -23,6 +23,7 @@ test("Book Store", async ({ page }, testInfo) => {
 });
 
 test("Demoblaze",async({page},testInfo)=>{
+
     await page.goto("https://www.demoblaze.com/");
 
     await expect(page).toHaveTitle('STORE');
@@ -30,12 +31,20 @@ test("Demoblaze",async({page},testInfo)=>{
     await takeArchive(page, 'Home Page', testInfo);
   
     await page.locator('[class="card-title"]').nth(0).click();
+
+    await page.locator('text="Add to cart"').waitFor({state:"visible"});
   
     await takeArchive(page, "Samsung", testInfo);
-  
+    
     await page.locator('text="Add to cart"').click();
-  
-    await takeArchive(page, "Alert Box", testInfo);
 
-    page.on('dialog', dialog => dialog.accept());
+    await takeArchive(page, "Alert Box", testInfo);
+     
+    page.on('dialog',async dialog =>{
+        await dialog.accept();
+    } );
+
+
+
+
 })
