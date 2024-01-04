@@ -1,10 +1,10 @@
 
 > chromaticplaywright1@1.0.0 build-archive-storybook
-> build-archive-storybook --output-dir C:\Users\david\AppData\Local\Temp\chromatic--24132-ShQ6EzgD5aD5
+> build-archive-storybook --output-dir C:\Users\david\AppData\Local\Temp\chromatic--21256-6bRLn2VYxRxv
 
 @storybook/cli v7.6.7
 
-info => Cleaning outputDir: C:\Users\david\AppData\Local\Temp\chromatic--24132-ShQ6EzgD5aD5
+info => Cleaning outputDir: C:\Users\david\AppData\Local\Temp\chromatic--21256-6bRLn2VYxRxv
 info => Loading presets
 info => Building manager..
 WARN unable to find package.json for @auto-it/released
@@ -25,9 +25,9 @@ WARN unable to find package.json for jest-environment-jsdom
 WARN unable to find package.json for lint-staged
 WARN unable to find package.json for ts-jest
 WARN unable to find package.json for tsup
-info => Manager built (9.27 s)
+info => Manager built (1.5 s)
 info => Building preview..
-info => Copying static files: C:\Users\david\Downloads\Mahesh\chromaticPlaywright1\node_modules\@storybook\manager\static at C:\Users\david\AppData\Local\Temp\chromatic--24132-ShQ6EzgD5aD5\sb-common-assets
+info => Copying static files: C:\Users\david\Downloads\Mahesh\chromaticPlaywright1\node_modules\@storybook\manager\static at C:\Users\david\AppData\Local\Temp\chromatic--21256-6bRLn2VYxRxv\sb-common-assets
 info Using Babel compiler
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
@@ -128,14 +128,11 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
-info => Copying static files: C:\Users\david\Downloads\Mahesh\chromaticPlaywright1\test-results\chromatic-archives\archive at C:\Users\david\AppData\Local\Temp\chromatic--24132-ShQ6EzgD5aD5\
-<s> [webpack.Progress] 10% building 0/1 entries 14/16 dependencies 3/14 modules
+info => Copying static files: C:\Users\david\Downloads\Mahesh\chromaticPlaywright1\test-results\chromatic-archives\archive at C:\Users\david\AppData\Local\Temp\chromatic--21256-6bRLn2VYxRxv\
 <s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/preset-server-webpack/dist/loader.js
-<s> [webpack.Progress] 10% building 0/1 entries 18/25 dependencies 3/17 modules
-<s> [webpack.Progress] 11% building 0/1 entries 60/77 dependencies 25/36 modules
-<s> [webpack.Progress] 13% building 0/1 entries 340/400 dependencies 69/190 modules
-<s> [webpack.Progress] 24% building 0/1 entries 687/700 dependencies 262/288 modules
-<s> [webpack.Progress] 25% building 0/1 entries 800/818 dependencies 283/317 modules
+<s> [webpack.Progress] 10% building 0/1 entries 19/28 dependencies 3/16 modules
+<s> [webpack.Progress] 12% building 0/1 entries 162/197 dependencies 53/100 modules
+<s> [webpack.Progress] 14% building 0/1 entries 400/441 dependencies 84/202 modules
 <s> [webpack.Progress] 65% building 1/1 entries 870/870 dependencies 336/336 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -326,11 +323,5 @@ WARN   467.9a9e43de.iframe.bundle.js (1.04 MiB)
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Preview built (32 s)
-info => Output directory: C:\Users\david\AppData\Local\Temp\chromatic--24132-ShQ6EzgD5aD5
-
-attention => Storybook now collects completely anonymous telemetry regarding usage.
-This information is used to shape Storybook's roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://storybook.js.org/telemetry
-
+info => Preview built (26 s)
+info => Output directory: C:\Users\david\AppData\Local\Temp\chromatic--21256-6bRLn2VYxRxv
