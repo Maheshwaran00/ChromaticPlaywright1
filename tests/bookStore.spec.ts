@@ -35,5 +35,6 @@ test('w3school',async({page},testInfo)=>{
     await context.waitForEvent('page')
   ])
   const page2= newPage[0];
-  await takeArchive(page1,'certify page ',testInfo); 
+  await page2.locator('[placeholder*="What are you looking"]').fill('Automation');
+  await takeArchive(page2,'certify page ',testInfo); 
 })
